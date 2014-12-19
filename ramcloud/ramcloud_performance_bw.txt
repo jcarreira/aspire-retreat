@@ -1,0 +1,11 @@
+Read Operation Size (Bytes) Latency
+basic.readBw100        8.9 18.8
+basic.readBw1K        89.0 130
+basic.readBw10K      864.5 925
+basic.readBw100K       3.2 2.2
+basic.readBw1M         5.2 2.6
+basic.writeBw100       9.0 5.9
+basic.writeBw1K       88.7 44.1
+basic.writeBw10K     774.6 233.2
+basic.writeBw100K      1.4 383
+basic.writeBw1M        1.5 431

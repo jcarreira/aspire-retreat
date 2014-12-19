@@ -1,0 +1,6 @@
+Size                       "Latency (RDMA)"
+Small blocks (<=64 bytes)  1.7
+32k                        12.5
+1Mb                        209
+2Mb                        431
+4Mb                        980

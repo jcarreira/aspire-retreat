@@ -1,0 +1,31 @@
+root@f1:/pcie_data# /home/eecs/joao/repos/ipoing/ioping-0.8/ioping .
+4.0 KiB from . (ext4 /dev/nvme0n1p1): request=1 time=47 us
+4.0 KiB from . (ext4 /dev/nvme0n1p1): request=2 time=157 us
+4.0 KiB from . (ext4 /dev/nvme0n1p1): request=3 time=152 us
+4.0 KiB from . (ext4 /dev/nvme0n1p1): request=4 time=152 us
+4.0 KiB from . (ext4 /dev/nvme0n1p1): request=5 time=157 us
+4.0 KiB from . (ext4 /dev/nvme0n1p1): request=6 time=152 us
+4.0 KiB from . (ext4 /dev/nvme0n1p1): request=7 time=165 us
+4.0 KiB from . (ext4 /dev/nvme0n1p1): request=8 time=181 us
+4.0 KiB from . (ext4 /dev/nvme0n1p1): request=9 time=167 us
+4.0 KiB from . (ext4 /dev/nvme0n1p1): request=10 time=175 us
+--- . (ext4 /dev/nvme0n1p1) ioping statistics ---
+10 requests completed in 9.1 s, 6.6 k iops, 26.0 MiB/s
+min/avg/max/mdev = 47 us / 150 us / 181 us / 35 us
+root@f1:/pcie_data# cd /data/
+root@f1:/data# /home/eecs/joao/repos/ipoing/ioping-0.8/ioping .
+4.0 KiB from . (ext4 /dev/sdb1): request=1 time=87 us
+4.0 KiB from . (ext4 /dev/sdb1): request=2 time=124 us
+4.0 KiB from . (ext4 /dev/sdb1): request=3 time=129 us
+4.0 KiB from . (ext4 /dev/sdb1): request=4 time=115 us
+4.0 KiB from . (ext4 /dev/sdb1): request=5 time=148 us
+4.0 KiB from . (ext4 /dev/sdb1): request=6 time=116 us
+4.0 KiB from . (ext4 /dev/sdb1): request=7 time=116 us
+4.0 KiB from . (ext4 /dev/sdb1): request=8 time=132 us
+4.0 KiB from . (ext4 /dev/sdb1): request=9 time=137 us
+4.0 KiB from . (ext4 /dev/sdb1): request=10 time=133 us
+4.0 KiB from . (ext4 /dev/sdb1): request=11 time=113 us
+4.0 KiB from . (ext4 /dev/sdb1): request=12 time=125 us
+--- . (ext4 /dev/sdb1) ioping statistics ---
+12 requests completed in 11.6 s, 8.1 k iops, 31.8 MiB/s
+min/avg/max/mdev = 87 us / 122 us / 148 us / 14 us

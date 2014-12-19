@@ -1,0 +1,5 @@
+1st slide: raw network
+2nd slide: ramcloud
+3rd slide: disks
+4th slide: SparkSQL
+5th slide: Ramcloud recovery

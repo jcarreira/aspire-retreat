@@ -1,0 +1,11 @@
+Read Operation Size (Bytes) Latency
+basic.read100.9       10.9 5.4
+basic.read1K.9        10.9 7.7
+basic.read10K.9       11.2 11.1
+basic.read100K.9      29.4 44
+basic.read1M.9       181.2 363
+basic.write100.9      10.8 16.2
+basic.write1K.9       10.9 20.8
+basic.write10K.9      12.4 37.7
+basic.write100K.9     67.7 311
+basic.write1M.9      611.9 2300
