@@ -1,0 +1,269 @@
+num_servers=(1), available hosts=(15) defined in config.py
+disjunct= False
+ensureServers command: /nscratch/joao/ramcloud/obj.clusterperf-replicated/ensureServers -C infrc:host=f1,port=12246 -m 0 -b 0 -l 1 --wait 30 --logFile logs/20150103082014/ensureServers.log
+Coordinator started on f1 at infrc:host=f1,port=12246
+Coordinator command line arguments  /nscratch/joao/ramcloud/obj.clusterperf-replicated/coordinator -C infrc:host=f1,port=12246 -l NOTICE --logFile logs/20150103082014/coordinator.f1.log 
+Server started on f1 at infrc:host=f1,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f1,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082014/server0.f1.log -t 4000 --masterOnly
+ensureServers command: /nscratch/joao/ramcloud/obj.clusterperf-replicated/ensureServers -C infrc:host=f1,port=12246 -m 1 -b 0 -l 1 --wait 30 --logFile logs/20150103082014/ensureServers.log
+All servers running
+Client 0 started on f2:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/ClusterPerf -C infrc:host=f1,port=12246 --numClients 1 --clientIndex 0 --logFile logs/20150103082014/client0.f2.log --size 100 basic
+iibpewyy finished
+basic.read100          3.5 us     read random 100B object (30B key) median
+basic.read100.min      3.3 us     read random 100B object (30B key) minimum
+basic.read100.9        3.9 us     read random 100B object (30B key) 90%
+basic.read100.99       4.3 us     read random 100B object (30B key) 99%
+basic.read100.999      6.6 us     read random 100B object (30B key) 99.9%
+basic.readBw100       26.5 MB/s   bandwidth reading 100B objects (30B key)
+basic.read1K           4.5 us     read random 1KB object (30B key) median
+basic.read1K.min       4.1 us     read random 1KB object (30B key) minimum
+basic.read1K.9         5.0 us     read random 1KB object (30B key) 90%
+basic.read1K.99        5.6 us     read random 1KB object (30B key) 99%
+basic.read1K.999       7.3 us     read random 1KB object (30B key) 99.9%
+basic.readBw1K       207.1 MB/s   bandwidth reading 1KB objects (30B key)
+basic.read10K          6.3 us     read random 10KB object (30B key) median
+basic.read10K.min      5.4 us     read random 10KB object (30B key) minimum
+basic.read10K.9        6.8 us     read random 10KB object (30B key) 90%
+basic.read10K.99       7.4 us     read random 10KB object (30B key) 99%
+basic.read10K.999      9.3 us     read random 10KB object (30B key) 99.9%
+basic.readBw10K        1.5 GB/s   bandwidth reading 10KB objects (30B key)
+basic.read100K        21.7 us     read random 100KB object (30B key) median
+basic.read100K.min    20.4 us     read random 100KB object (30B key) minimum
+basic.read100K.9      22.2 us     read random 100KB object (30B key) 90%
+basic.read100K.99     23.1 us     read random 100KB object (30B key) 99%
+basic.read100K.999    24.4 us     read random 100KB object (30B key) 99.9%
+basic.readBw100K       4.3 GB/s   bandwidth reading 100KB objects (30B key)
+basic.read1M         171.6 us     read random 1MB object (30B key) median
+basic.read1M.min     165.1 us     read random 1MB object (30B key) minimum
+basic.read1M.9       172.6 us     read random 1MB object (30B key) 90%
+basic.read1M.99      173.7 us     read random 1MB object (30B key) 99%
+basic.read1M.999     175.1 us     read random 1MB object (30B key) 99.9%
+basic.readBw1M         5.4 GB/s   bandwidth reading 1MB objects (30B key)
+basic.write100         4.2 us     write random 100B object (30B key) median
+basic.write100.min     4.0 us     write random 100B object (30B key) minimum
+basic.write100.9       4.7 us     write random 100B object (30B key) 90%
+basic.write100.99      5.5 us     write random 100B object (30B key) 99%
+basic.write100.999     8.5 us     write random 100B object (30B key) 99.9%
+basic.writeBw100      22.1 MB/s   bandwidth writing 100B objects (30B key)
+basic.write1K          5.6 us     write random 1KB object (30B key) median
+basic.write1K.min      5.1 us     write random 1KB object (30B key) minimum
+basic.write1K.9        6.1 us     write random 1KB object (30B key) 90%
+basic.write1K.99       6.6 us     write random 1KB object (30B key) 99%
+basic.write1K.999     11.1 us     write random 1KB object (30B key) 99.9%
+basic.writeBw1K      167.5 MB/s   bandwidth writing 1KB objects (30B key)
+basic.write10K        10.4 us     write random 10KB object (30B key) median
+basic.write10K.min     9.4 us     write random 10KB object (30B key) minimum
+basic.write10K.9      11.0 us     write random 10KB object (30B key) 90%
+basic.write10K.99     11.8 us     write random 10KB object (30B key) 99%
+basic.write10K.999    24.7 us     write random 10KB object (30B key) 99.9%
+basic.writeBw10K     912.8 MB/s   bandwidth writing 10KB objects (30B key)
+basic.write100K       60.0 us     write random 100KB object (30B key) median
+basic.write100K.min   57.3 us     write random 100KB object (30B key) minimum
+basic.write100K.9     61.2 us     write random 100KB object (30B key) 90%
+basic.write100K.99    72.2 us     write random 100KB object (30B key) 99%
+basic.write100K.999   76.2 us     write random 100KB object (30B key) 99.9%
+basic.writeBw100K      1.5 GB/s   bandwidth writing 100KB objects (30B key)
+basic.write1M        587.6 us     write random 1MB object (30B key) median
+basic.write1M.min    576.5 us     write random 1MB object (30B key) minimum
+basic.write1M.9      599.4 us     write random 1MB object (30B key) 90%
+basic.write1M.99     611.1 us     write random 1MB object (30B key) 99%
+basic.write1M.999    652.5 us     write random 1MB object (30B key) 99.9%
+basic.writeBw1M        1.6 GB/s   bandwidth writing 1MB objects (30B key)
+num_servers=(15), available hosts=(15) defined in config.py
+disjunct= False
+ensureServers command: /nscratch/joao/ramcloud/obj.clusterperf-replicated/ensureServers -C infrc:host=f1,port=12246 -m 0 -b 0 -l 1 --wait 30 --logFile logs/20150103082032/ensureServers.log
+Coordinator started on f1 at infrc:host=f1,port=12246
+Coordinator command line arguments  /nscratch/joao/ramcloud/obj.clusterperf-replicated/coordinator -C infrc:host=f1,port=12246 -l NOTICE --logFile logs/20150103082032/coordinator.f1.log 
+Server started on f1 at infrc:host=f1,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f1,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082032/server0.f1.log  --masterOnly
+Server started on f2 at infrc:host=f2,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f2,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082032/server1.f2.log  --masterOnly
+Server started on f3 at infrc:host=f3,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f3,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082032/server2.f3.log  --masterOnly
+Server started on f4 at infrc:host=f4,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f4,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082032/server3.f4.log  --masterOnly
+Server started on f5 at infrc:host=f5,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f5,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082032/server4.f5.log  --masterOnly
+Server started on f6 at infrc:host=f6,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f6,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082032/server5.f6.log  --masterOnly
+Server started on f7 at infrc:host=f7,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f7,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082032/server6.f7.log  --masterOnly
+Server started on f8 at infrc:host=f8,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f8,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082032/server7.f8.log  --masterOnly
+Server started on f9 at infrc:host=f9,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f9,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082032/server8.f9.log  --masterOnly
+Server started on f10 at infrc:host=f10,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f10,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082032/server9.f10.log  --masterOnly
+Server started on f11 at infrc:host=f11,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f11,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082032/server10.f11.log  --masterOnly
+Server started on f12 at infrc:host=f12,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f12,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082032/server11.f12.log  --masterOnly
+Server started on f13 at infrc:host=f13,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f13,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082032/server12.f13.log  --masterOnly
+Server started on f14 at infrc:host=f14,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f14,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082032/server13.f14.log  --masterOnly
+Server started on f15 at infrc:host=f15,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f15,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082032/server14.f15.log  --masterOnly
+ensureServers command: /nscratch/joao/ramcloud/obj.clusterperf-replicated/ensureServers -C infrc:host=f1,port=12246 -m 15 -b 0 -l 1 --wait 30 --logFile logs/20150103082032/ensureServers.log
+All servers running
+Client 0 started on f1:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/ClusterPerf -C infrc:host=f1,port=12246 --numClients 1 --clientIndex 0 --logFile logs/20150103082032/client0.f1.log --numTables 15 --size 100 multiRead_oneMaster
+nbfeensu finished
+# RAMCloud multiRead performance for 100 B objects with 30 byte keys
+# located on a single master.
+# Generated by 'clusterperf.py multiRead_oneMaster'
+#
+# Num Objs    Num Masters    Objs/Master    Latency (us)    Latency/Obj (us)
+#----------------------------------------------------------------------------
+         1              1              1            3.9               3.92
+         2              1              2            4.8               2.42
+         3              1              3            5.3               1.78
+         4              1              4            6.1               1.52
+         5              1              5            6.6               1.33
+         6              1              6            7.2               1.20
+         7              1              7            7.6               1.09
+         8              1              8            8.0               1.01
+         9              1              9            8.5               0.94
+        10              1             10            9.2               0.92
+        20              1             20           14.5               0.73
+        30              1             30           19.6               0.65
+        40              1             40           24.3               0.61
+        50              1             50           29.2               0.58
+        60              1             60           34.2               0.57
+        70              1             70           38.8               0.55
+        80              1             80           42.1               0.53
+        90              1             90           43.0               0.48
+       100              1            100           44.1               0.44
+       200              1            200           70.9               0.35
+       300              1            300           91.4               0.30
+       400              1            400          114.1               0.29
+       500              1            500          134.6               0.27
+       600              1            600          159.7               0.27
+       700              1            700          186.3               0.27
+       800              1            800          202.9               0.25
+       900              1            900          227.2               0.25
+      1000              1           1000          249.3               0.25
+      2000              1           2000          462.8               0.23
+      3000              1           3000          686.0               0.23
+      4000              1           4000          907.2               0.23
+      5000              1           5000         1124.3               0.22
+num_servers=(15), available hosts=(15) defined in config.py
+disjunct= False
+ensureServers command: /nscratch/joao/ramcloud/obj.clusterperf-replicated/ensureServers -C infrc:host=f1,port=12246 -m 0 -b 0 -l 1 --wait 30 --logFile logs/20150103082053/ensureServers.log
+Coordinator started on f1 at infrc:host=f1,port=12246
+Coordinator command line arguments  /nscratch/joao/ramcloud/obj.clusterperf-replicated/coordinator -C infrc:host=f1,port=12246 -l NOTICE --logFile logs/20150103082053/coordinator.f1.log 
+Server started on f1 at infrc:host=f1,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f1,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082053/server0.f1.log  --masterOnly
+Server started on f2 at infrc:host=f2,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f2,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082053/server1.f2.log  --masterOnly
+Server started on f3 at infrc:host=f3,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f3,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082053/server2.f3.log  --masterOnly
+Server started on f4 at infrc:host=f4,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f4,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082053/server3.f4.log  --masterOnly
+Server started on f5 at infrc:host=f5,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f5,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082053/server4.f5.log  --masterOnly
+Server started on f6 at infrc:host=f6,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f6,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082053/server5.f6.log  --masterOnly
+Server started on f7 at infrc:host=f7,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f7,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082053/server6.f7.log  --masterOnly
+Server started on f8 at infrc:host=f8,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f8,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082053/server7.f8.log  --masterOnly
+Server started on f9 at infrc:host=f9,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f9,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082053/server8.f9.log  --masterOnly
+Server started on f10 at infrc:host=f10,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f10,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082053/server9.f10.log  --masterOnly
+Server started on f11 at infrc:host=f11,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f11,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082053/server10.f11.log  --masterOnly
+Server started on f12 at infrc:host=f12,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f12,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082053/server11.f12.log  --masterOnly
+Server started on f13 at infrc:host=f13,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f13,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082053/server12.f13.log  --masterOnly
+Server started on f14 at infrc:host=f14,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f14,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082053/server13.f14.log  --masterOnly
+Server started on f15 at infrc:host=f15,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f15,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082053/server14.f15.log  --masterOnly
+ensureServers command: /nscratch/joao/ramcloud/obj.clusterperf-replicated/ensureServers -C infrc:host=f1,port=12246 -m 15 -b 0 -l 1 --wait 30 --logFile logs/20150103082053/ensureServers.log
+All servers running
+Client 0 started on f1:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/ClusterPerf -C infrc:host=f1,port=12246 --numClients 1 --clientIndex 0 --logFile logs/20150103082053/client0.f1.log --numTables 15 --size 100 multiRead_oneObjectPerMaster
+dbasally finished
+# RAMCloud multiRead performance for 100 B objects with 30 byte keys
+# with one object located on each master.
+# Generated by 'clusterperf.py multiRead_oneObjectPerMaster'
+#
+# Num Objs    Num Masters    Objs/Master    Latency (us)    Latency/Obj (us)
+#----------------------------------------------------------------------------
+         1              1              1            3.4               3.35
+         2              2              1            4.3               2.17
+         3              3              1            5.0               1.68
+         4              4              1            5.7               1.43
+         5              5              1            6.4               1.28
+         6              6              1            7.0               1.17
+         7              7              1            7.8               1.11
+         8              8              1            8.5               1.06
+         9              9              1            9.3               1.03
+        10             10              1            9.9               0.99
+        11             11              1           12.0               1.09
+        12             12              1           12.6               1.05
+        13             13              1           13.4               1.03
+        14             14              1           14.1               1.01
+        15             15              1           15.7               1.04
+num_servers=(1), available hosts=(15) defined in config.py
+disjunct= False
+ensureServers command: /nscratch/joao/ramcloud/obj.clusterperf-replicated/ensureServers -C infrc:host=f1,port=12246 -m 0 -b 0 -l 1 --wait 30 --logFile logs/20150103082105/ensureServers.log
+Coordinator started on f1 at infrc:host=f1,port=12246
+Coordinator command line arguments  /nscratch/joao/ramcloud/obj.clusterperf-replicated/coordinator -C infrc:host=f1,port=12246 -l NOTICE --logFile logs/20150103082105/coordinator.f1.log 
+Server started on f1 at infrc:host=f1,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f1,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082105/server0.f1.log -t 2000 --masterOnly
+ensureServers command: /nscratch/joao/ramcloud/obj.clusterperf-replicated/ensureServers -C infrc:host=f1,port=12246 -m 1 -b 0 -l 1 --wait 30 --logFile logs/20150103082105/ensureServers.log
+All servers running
+Client 0 started on f2:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/ClusterPerf -C infrc:host=f1,port=12246 --numClients 14 --clientIndex 0 --logFile logs/20150103082105/client0.f2.log --size 100 multiReadThroughput
+Client 1 started on f3:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/ClusterPerf -C infrc:host=f1,port=12246 --numClients 14 --clientIndex 1 --logFile logs/20150103082105/client1.f3.log --size 100 multiReadThroughput
+Client 2 started on f4:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/ClusterPerf -C infrc:host=f1,port=12246 --numClients 14 --clientIndex 2 --logFile logs/20150103082105/client2.f4.log --size 100 multiReadThroughput
+Client 3 started on f5:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/ClusterPerf -C infrc:host=f1,port=12246 --numClients 14 --clientIndex 3 --logFile logs/20150103082105/client3.f5.log --size 100 multiReadThroughput
+Client 4 started on f6:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/ClusterPerf -C infrc:host=f1,port=12246 --numClients 14 --clientIndex 4 --logFile logs/20150103082105/client4.f6.log --size 100 multiReadThroughput
+Client 5 started on f7:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/ClusterPerf -C infrc:host=f1,port=12246 --numClients 14 --clientIndex 5 --logFile logs/20150103082105/client5.f7.log --size 100 multiReadThroughput
+Client 6 started on f8:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/ClusterPerf -C infrc:host=f1,port=12246 --numClients 14 --clientIndex 6 --logFile logs/20150103082105/client6.f8.log --size 100 multiReadThroughput
+Client 7 started on f9:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/ClusterPerf -C infrc:host=f1,port=12246 --numClients 14 --clientIndex 7 --logFile logs/20150103082105/client7.f9.log --size 100 multiReadThroughput
+Client 8 started on f10:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/ClusterPerf -C infrc:host=f1,port=12246 --numClients 14 --clientIndex 8 --logFile logs/20150103082105/client8.f10.log --size 100 multiReadThroughput
+Client 9 started on f11:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/ClusterPerf -C infrc:host=f1,port=12246 --numClients 14 --clientIndex 9 --logFile logs/20150103082105/client9.f11.log --size 100 multiReadThroughput
+Client 10 started on f12:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/ClusterPerf -C infrc:host=f1,port=12246 --numClients 14 --clientIndex 10 --logFile logs/20150103082105/client10.f12.log --size 100 multiReadThroughput
+Client 11 started on f13:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/ClusterPerf -C infrc:host=f1,port=12246 --numClients 14 --clientIndex 11 --logFile logs/20150103082105/client11.f13.log --size 100 multiReadThroughput
+Client 12 started on f14:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/ClusterPerf -C infrc:host=f1,port=12246 --numClients 14 --clientIndex 12 --logFile logs/20150103082105/client12.f14.log --size 100 multiReadThroughput
+Client 13 started on f15:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/ClusterPerf -C infrc:host=f1,port=12246 --numClients 14 --clientIndex 13 --logFile logs/20150103082105/client13.f15.log --size 100 multiReadThroughput
+vpdwbyir finished
+gflbpytw finished
+rlficigq finished
+exmsesol finished
+mstxdpgs finished
+pclivsps finished
+uwslbkyx finished
+sidkxjaf finished
+ljaqfwis finished
+rlscetfu finished
+lymdbngm finished
+ugqldyli finished
+vqugvnxe finished
+rbroubea finished
+# RAMCloud multi-read throughput of a single server with a
+# varying number of clients issuing 70-object multi-reads on
+# randomly-chosen 100-byte objects with 30-byte keys
+# Generated by 'clusterperf.py multiReadThroughput'
+#
+# numClients   throughput     worker utiliz.
+#              (kreads/sec)
+#-------------------------------------------
+    1             1729           0.496
+    2             2992           1.111
+    3             3907           1.754
+    4             4932           2.203
+    5             5722           2.752
+    6             5881           2.967
+    7             6103           2.971
+    8             6130           2.973
+    9             5960           2.972
+   10             6158           2.974
+   11             6164           2.975
+   12             6039           2.978
+   13             6184           2.978
+num_servers=(15), available hosts=(15) defined in config.py
+disjunct= False
+ensureServers command: /nscratch/joao/ramcloud/obj.clusterperf-replicated/ensureServers -C infrc:host=f1,port=12246 -m 0 -b 0 -l 1 --wait 30 --logFile logs/20150103082124/ensureServers.log
+Coordinator started on f1 at infrc:host=f1,port=12246
+Coordinator command line arguments  /nscratch/joao/ramcloud/obj.clusterperf-replicated/coordinator -C infrc:host=f1,port=12246 -l NOTICE --logFile logs/20150103082124/coordinator.f1.log 
+Server started on f1 at infrc:host=f1,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f1,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082124/server0.f1.log  --masterOnly
+Server started on f2 at infrc:host=f2,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f2,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082124/server1.f2.log  --masterOnly
+Server started on f3 at infrc:host=f3,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f3,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082124/server2.f3.log  --masterOnly
+Server started on f4 at infrc:host=f4,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f4,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082124/server3.f4.log  --masterOnly
+Server started on f5 at infrc:host=f5,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f5,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082124/server4.f5.log  --masterOnly
+Server started on f6 at infrc:host=f6,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f6,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082124/server5.f6.log  --masterOnly
+Server started on f7 at infrc:host=f7,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f7,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082124/server6.f7.log  --masterOnly
+Server started on f8 at infrc:host=f8,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f8,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082124/server7.f8.log  --masterOnly
+Server started on f9 at infrc:host=f9,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f9,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082124/server8.f9.log  --masterOnly
+Server started on f10 at infrc:host=f10,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f10,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082124/server9.f10.log  --masterOnly
+Server started on f11 at infrc:host=f11,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f11,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082124/server10.f11.log  --masterOnly
+Server started on f12 at infrc:host=f12,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f12,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082124/server11.f12.log  --masterOnly
+Server started on f13 at infrc:host=f13,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f13,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082124/server12.f13.log  --masterOnly
+Server started on f14 at infrc:host=f14,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f14,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082124/server13.f14.log  --masterOnly
+Server started on f15 at infrc:host=f15,port=12247:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/server -C infrc:host=f1,port=12246 -L infrc:host=f15,port=12247 -r 0 -l NOTICE --clusterName __unnamed__ --logFile logs/20150103082124/server14.f15.log  --masterOnly
+ensureServers command: /nscratch/joao/ramcloud/obj.clusterperf-replicated/ensureServers -C infrc:host=f1,port=12246 -m 15 -b 0 -l 1 --wait 30 --logFile logs/20150103082124/ensureServers.log
+All servers running
+Client 0 started on f1:  /nscratch/joao/ramcloud/obj.clusterperf-replicated/ClusterPerf -C infrc:host=f1,port=12246 --numClients 1 --clientIndex 0 --logFile logs/20150103082124/client0.f1.log --numTables 15 --size 100 multiWrite_oneMaster
+Traceback (most recent call last):
+  File "./clusterperf.py", line 530, in <module>
+    run_test(test, options)
+  File "./clusterperf.py", line 177, in run_test
+    test.function(test.name, options, cluster_args, client_args)
+  File "./clusterperf.py", line 287, in multiOp
+    **cluster_args)
+  File "/nscratch/joao/ramcloud/scripts/cluster.py", line 674, in run
+    cluster.wait(clients, timeout)
+  File "/nscratch/joao/ramcloud/scripts/cluster.py", line 484, in wait
+    raise Exception('timeout exceeded %s' % self.log_subdir)
+Exception: timeout exceeded logs/20150103082124
