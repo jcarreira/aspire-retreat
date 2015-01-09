@@ -29,11 +29,11 @@ data <- matrix(c(30.5, 18.8,
 par(las=2)
 
 labs <- c("Read-100B", "Read-1K", "Read-10K", "Read-100K", "Read-1M", "Write-100B", "Write-1k", "Write-10K", "Write-100K", "Write-1M")
-x <- barplot(data, main="Ramcloud Bandwidth",
+x <- barplot(data, main="RAMCloud Read/Write Bandwidth",
         ylab="Bandwidth (MB/s)", xlab="", 
         col=c("darkblue","darkgreen"), 
         beside=TRUE,
         log="y",
         names.arg=labs,
-        legend=c("Firebox", "Ramcloud HW"))
+        legend=c("Firebox", "RAMCloud HW"))
 #text(cex=1, x=x-0.25, y=-10, labs, xpd=TRUE, srt=45)

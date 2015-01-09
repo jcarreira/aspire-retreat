@@ -28,13 +28,13 @@ data <- matrix(c(3.0, 5.4,
 par(las=2)
 
 labs <- c("Basic.Read-100B", "Basic.Read-1K", "Basic.Read-10K", "Basic.Read-100K", "Basic.Read-1M", "Basic.Write-100B", "Basic.Write-1k", "Basic.Write-10K", "Basic.Write-100K", "Basic.Write-1M")
-x <- barplot(data, main="Ramcloud Median Latency (90th percentile)",
+x <- barplot(data, main="RAMCloud Read/Write Median Latency",
         ylab="Latency (us)", xlab="",
         col=c("darkblue","darkgreen"), 
         beside=TRUE,
         names.arg=labs,
         log="y",
-        legend=c("Firebox", "Ramcloud HW"))
+        legend=c("Firebox", "RAMCloud HW"))
 
 axis(side = 2, at = c(0,1,2,3))
 #text(cex=1, x=x-0.25, y=-10, labs, xpd=TRUE, srt=45)
